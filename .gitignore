@@ -11,5 +11,10 @@ local
 
 # grunt/npm stuff
 node_modules
+src/static/jsmin
+
+# sass
+.sass-cache
+src/static/styles/style.min.css
 
 
