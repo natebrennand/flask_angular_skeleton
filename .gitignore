@@ -1,6 +1,6 @@
 
-
-
+# python
+*.pyc
 
 # virtualenv/flask stuff
 bin

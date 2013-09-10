@@ -1,5 +1,4 @@
 
-
 from flask import Flask, make_response, request
 import simplejson
 
@@ -10,9 +9,9 @@ app = Flask(__name__)
 app.config.from_object('config.flask_config')
 
 
-@app.route('/test', methods=['POST'])
-def test():
-    return letters.process(data=simplejson.dumps(request.data))
+@app.route('/lowercase', methods=['POST'])
+def lowercase():
+    return letters.process(data=simplejson.loads(request.data))
 
 
 @app.route('/', methods=['GET'])

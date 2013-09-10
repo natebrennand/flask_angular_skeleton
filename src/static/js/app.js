@@ -10,7 +10,7 @@ app.config( ['$routeProvider', function ($routeProvider) {
 		// routes
 		.when('/a',	{templateUrl: 'static/partials/a.html',			controller: "AController"})
 		.when('/b',	{templateUrl: 'static/partials/b.html',			controller: "BController"})
-		.when('/',  {templateUrl: 'static/partials/home.html',      controller: "HomeController"})
+		.when('/',	{templateUrl: 'static/partials/home.html',			controller: "HomeController"})
 		// default
 		.otherwise({redirectTo: '/'});
 }]);
