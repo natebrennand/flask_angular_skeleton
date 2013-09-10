@@ -1,14 +1,18 @@
 
 
-from flask import Flask, make_response
+from flask import Flask, make_response, request
 import simplejson
+
+from controllers import letters
 
 
 app = Flask(__name__)
-#app.config.from_object('config.flask_config')
+app.config.from_object('config.flask_config')
 
 
-
+@app.route('/test', methods=['POST'])
+def test():
+    return letters.process(data=simplejson.dumps(request.data))
 
 
 @app.route('/', methods=['GET'])

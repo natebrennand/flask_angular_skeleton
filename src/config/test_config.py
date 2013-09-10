@@ -1,0 +1,4 @@
+
+# flask settings
+
+debug = True
