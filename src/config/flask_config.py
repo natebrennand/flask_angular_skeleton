@@ -1,4 +1,9 @@
 
+from os import environ
+
 # flask settings
 
-debug = True
+if environ.get('FLASK_DEBUG') == 'TRUE':
+    debug = True
+else:
+    debug = False
